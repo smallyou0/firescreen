@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>firescreen</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body class="bg-white">
+    <header class="header">
+      <div class="align triple">
+        <a href="home.html"><img src="images/logo_sm.svg" alt=""></a>
+        <!-- <h1 class="h1"><a class="logo" href="#none"></a></h1> -->
+        <div class="header__alarm">
+          <a class="btn-alarm" href="#none" onclick="alert('준비중입니다')"></a>
+        </div>
+      </div>
+    </header>
+    <main class="main pb150">
+      <section class="content pt15">
+        
+        <ul class="tab-type2 px16">
+          <li><a class="btn-tab-type2 active" href="home.html">제어</a></li>
+          <li><a class="btn-tab-type2" href="dashboard.html">진단</a></li>
+          <li><a class="btn-tab-type2" onclick="alert('준비중입니다')">더보기</a></li>
+        </ul>
+        <a href="javascript:history.back();" class="px16 align vm mt22">
+          <img src="images/ico_btn_back.svg" alt="">
+          <div class="text-type4">작동 내역 확인</div>
+        </a>
+        <div class="text-type4 fz18 gray fw400 align vm center" style="height:calc(100vh - 300px) ">
+          작동 내역이 없습니다
+        </div>
+       
+      </section>
+      <!-- <div class="nav-foot">
+        <nav class="nav-foot__cont">
+          <ul>
+            <li class="ico-nav1 active"><a href="home.html">홈</a></li>
+            <li class="ico-nav2"><a href="search1.html">검색</a></li>
+            <li class="ico-nav3"><a href="#none" onclick="alert('준비중입니다')">찜</a></li>
+            <li class="ico-nav4"><a href="#none" onclick="alert('준비중입니다')">배송</a></li>
+            <li class="ico-nav4"><a href="#none" onclick="alert('준비중입니다')">더보기</a></li>
+          </ul>
+        </nav>
+      </div> -->
+    </main>
+  </body>
+  <script src="js/button.js"></script>
+  <script src="js/navFoot.js"></script>
+</html>
